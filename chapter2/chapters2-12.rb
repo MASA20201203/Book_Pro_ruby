@@ -37,22 +37,30 @@
 # puts a.equal?(b)
 # puts b.equal?(c)
 
-# b, cは同じオブジェクト、aは異なるオブジェクト
-a = 'hello'
-b = 'hello'
-c = b
+# # b, cは同じオブジェクト、aは異なるオブジェクト
+# a = 'hello'
+# b = 'hello'
+# c = b
 
-# 渡された文字列を破壊的に大文字に変換するメソッドを定義する
-def m!(d)
-  d.upcase!
-end
+# # 渡された文字列を破壊的に大文字に変換するメソッドを定義する
+# def m!(d)
+#   d.upcase!
+# end
 
-# cにm!メソッドを適用する
-m!(c)
+# # cにm!メソッドを適用する
+# m!(c)
 
-# b, cはいずれも大文字になる
-puts b
-puts c
+# # b, cはいずれも大文字になる
+# puts b
+# puts c
 
-# aは別のオブジェクトなので大文字にならない
-puts a
+# # aは別のオブジェクトなので大文字にならない
+# puts a
+
+# 2.12.7 require
+# puts Date.today
+
+# require 'date'
+# puts Date.today
+
+
