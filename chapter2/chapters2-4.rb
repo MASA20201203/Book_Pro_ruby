@@ -26,3 +26,12 @@
 # puts 8 % 3
 
 # puts 2 ** 3
+
+# 2.4.1 演算子による値の比較
+puts 1 < 2
+puts 1 <= 2
+puts 1 > 2
+puts 1 >= 2
+puts 1 == 2
+puts 1 == 1
+puts 1 != 2
