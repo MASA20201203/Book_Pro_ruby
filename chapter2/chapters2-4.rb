@@ -70,7 +70,7 @@
 # 少数に変換
 # puts 1 + '10.5'.to_f
 
-number = 3
+# number = 3
 # 文字列に数値を+演算子で連結することはできない
 # 'Number is ' + number
 
