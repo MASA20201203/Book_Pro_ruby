@@ -93,3 +93,71 @@
 # if status != 'ok'
 #   puts '何か異常があります'
 # end
+
+# 2.10.4 case文
+
+# country = 'italy'
+
+# # if文を使う場合
+# if country == 'japan'
+#   puts 'こんにちは'
+# elsif country == 'us'
+#   puts 'Hello'
+# elsif country == 'italy'
+#   puts 'ciao'
+# else
+#   puts '???'
+# end
+
+# # case文を使う場合
+# case country
+# when 'japan'
+#   puts 'こんにちは'
+# when 'us'
+#   puts 'Hello'
+# when 'italy'
+#   puts 'ciao'
+# else
+#   puts '???'
+# end
+
+# when節に複数の値を指定する
+# country = 'アメリカ'
+# case country
+# when 'japan', '日本'
+#   puts 'こんにちは'
+# when 'us', 'アメリカ'
+#   puts 'Hello'
+# when 'italy', 'イタリア'
+#   puts 'ciao'
+# else
+#   puts '???'
+# end
+
+
+# 変数に入れることも可能
+# country = '日本'
+
+# message =
+#   case country
+#   when 'japan', '日本'
+#     puts 'こんにちは'
+#   when 'us', 'アメリカ'
+#     puts 'Hello'
+#   when 'italy', 'イタリア'
+#     puts 'ciao'
+#   else
+#     puts '???'
+#   end
+
+# puts message
+
+# thenを入れてもかける（使用頻度は高くない）
+country = 'italy'
+
+case country
+when 'japan' then puts 'こんにちは'
+when 'us' then puts 'Hello'
+when 'italy' then puts 'ciao'
+else '???'
+end
