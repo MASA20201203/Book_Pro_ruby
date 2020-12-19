@@ -121,3 +121,10 @@
 # puts String.new('hello')
 
 # puts "\u3042\u3044\u3046"
+
+# 2.8.6 文字と文字列の違いはない
+# puts 'a'
+# puts 'abc'
+# puts ''
+
+# puts ?a
