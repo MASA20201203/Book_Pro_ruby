@@ -78,3 +78,22 @@
 # puts multiple_of_three?(4)
 # puts multiple_of_three?(5)
 # puts multiple_of_three?(6)
+
+# 2.11.3 !で終わるメソッド
+
+# a = 'ruby'
+
+# # upcaseだと変数aの値は変化しない
+# puts a.upcase
+# puts a
+
+# # upcase!だと変数aの値も大文字に変わる
+# puts a.upcase!
+# puts a
+
+# def reverse_upcase!(s)
+#   s.reverse!.upcase!
+# end
+# s = 'ruby'
+# puts reverse_upcase!(s)
+# puts s
