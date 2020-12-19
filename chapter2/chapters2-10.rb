@@ -38,15 +38,58 @@
 # puts (t1 || t2 && f1) # &&は||よりも優先順位が高い
 # puts (t1 or t2 and f1) # andとorの優先順位は同じなので、左から順に評価される
 
-def greeting(country)
-  # countryがnil（またはfalse）ならメッセージを返してメソッドを抜ける
-  country or return 'countryを入力してください'
+# def greeting(country)
+#   # countryがnil（またはfalse）ならメッセージを返してメソッドを抜ける
+#   country or return 'countryを入力してください'
 
-  if country == 'japan'
-    'こんにちは'
-  else
-    'hello'
-  end
-end
-puts greeting(nil)
-puts greeting('japan')
+#   if country == 'japan'
+#     'こんにちは'
+#   else
+#     'hello'
+#   end
+# end
+# puts greeting(nil)
+# puts greeting('japan')
+
+# 2.10.3 unless文
+
+# status = 'error'
+# if status != 'ok'
+#   puts '何か異常があります'
+# end
+
+# status = 'error'
+# unless status == 'ok'
+#   puts '何か異常があります'
+# end
+
+# status = 'ok'
+# unless status == 'ok'
+#   puts '何か異常があります'
+# else
+#   puts '正常です'
+# end
+
+# status = 'error'
+
+# # unlessの結果を変数に代入する
+# message =
+#   unless status == 'ok'
+#     '何か異常があります'
+#   else
+#     '正常です'
+#   end
+# puts message
+
+# puts '何か異常があります' unless status == 'ok'
+
+# status = 'error'
+# unless status == 'ok' then
+#   puts '何か異常があります'
+# end
+
+# status = 'error'
+# # unlessを無理に使わなくてもよい
+# if status != 'ok'
+#   puts '何か異常があります'
+# end
