@@ -6,9 +6,12 @@
 # puts 0xff
 
 # 2.9.2 ビット演算
-puts (~0b1010).to_s(2)
-puts (0b1010 & 0b1100).to_s(2)
-puts (0b1010 | 0b1100).to_s(2)
-puts (0b1010 ^ 0b1100).to_s(2)
-puts (0b1010 >> 1).to_s(2)
-puts (0b1010 << 1).to_s(2)
+# puts (~0b1010).to_s(2)
+# puts (0b1010 & 0b1100).to_s(2)
+# puts (0b1010 | 0b1100).to_s(2)
+# puts (0b1010 ^ 0b1100).to_s(2)
+# puts (0b1010 >> 1).to_s(2)
+# puts (0b1010 << 1).to_s(2)
+
+# 2.9.3 指数表現
+puts 2e-3
