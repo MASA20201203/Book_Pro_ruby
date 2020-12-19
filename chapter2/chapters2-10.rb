@@ -153,11 +153,27 @@
 # puts message
 
 # thenを入れてもかける（使用頻度は高くない）
-country = 'italy'
+# country = 'italy'
 
-case country
-when 'japan' then puts 'こんにちは'
-when 'us' then puts 'Hello'
-when 'italy' then puts 'ciao'
-else '???'
+# case country
+# when 'japan' then puts 'こんにちは'
+# when 'us' then puts 'Hello'
+# when 'italy' then puts 'ciao'
+# else '???'
+# end
+
+# 2.10.5 条件演算子（三項演算子）
+# if文
+n = 11
+if n > 10
+  puts '10より大きい'
+else
+  puts '10以下'
 end
+
+n = 9
+n > 10 ? (puts '10より大きい') : (puts '10以下')
+
+n = 12
+message = n > 11 ? '11より大きい' : '10以下'
+puts message
