@@ -57,19 +57,35 @@
 # コメント
 
 # 2.2.6 空白文字
-puts (5+1         - 2) * 3
-def 
-           add         (a, b)
+# puts (5+1         - 2) * 3
+# def 
+#            add         (a, b)
 
 
-  a +           b
-                     end
-puts add(           4,  5)
+#   a +           b
+#                      end
+# puts add(           4,  5)
 
 
 
-puts (5 + 1 - 2) * 3
-def add(a, b)
-  a + b
-end
-puts add(4, 5)
+# puts (5 + 1 - 2) * 3
+# def add(a, b)
+#   a + b
+# end
+# puts add(4, 5)
+
+# 2.2.7 リテラル
+# 数値
+puts 123
+
+# 文字列
+puts "Hello"
+
+# 配列
+puts [1, 2, 3]
+
+# ハッシュ
+puts ( {'japan' => 'yen', 'us' => 'doller', 'india' => 'rupee'} )
+
+# 正規表現
+puts /\d+-\d+/
