@@ -80,4 +80,18 @@ number = 3
 # 式展開を使用
 # puts "Number is #{number}"
 
+# column 小数を使う場合は丸め誤差に注意
+# puts 0.1 * 3.0
+# puts 0.1 * 3.0 == 0.3
+# puts 0.1 * 3.0 <= 0.3
 
+# Rational(有理数)クラスを使用
+# puts 0.1r * 3.0r
+# puts 0.1r * 3r == 0.3
+# puts 0.1r * 3r <= 0.3
+
+# a = 0.1
+# b = 3.0
+# puts a.rationalize * b.rationalize
+
+# puts (0.1r * 3.0r).to_f
