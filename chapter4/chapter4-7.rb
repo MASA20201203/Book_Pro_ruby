@@ -118,3 +118,28 @@
 # p [-1, 0, *a, 4, 5]
 
 # p [-1, 0] + a + [4, 5]
+
+# 4.7.10 %記法で文字列の配列を完結に作る
+# # []で文字列の配列を作成する
+# p ['apple', 'melon', 'orange']
+
+# # %wで文字列の配列を作成する（!で囲む場合）
+# p %w!apple melon orange!
+
+# # %wで文字列の配列を作成する（丸カッコで囲む場合）
+# p %w(apple melon orange)
+
+# # 空白文字（スペースや改行）が連続した場合も1つの区切り文字と見なされる
+# p %w(
+#   apple
+#   melon
+#   orange
+# )
+
+# # 空白文字を含めたい場合
+# p %w(big\ apple small\ melon orange)
+
+# # 式展開等を含めたい場合
+# prefix = 'This is'
+# p %W(#{prefix}\ an\ apple small\nmelon orange)
+# puts %W(#{prefix}\ an\ apple small\nmelon orange)
