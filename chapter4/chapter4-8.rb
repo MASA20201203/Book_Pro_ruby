@@ -19,3 +19,12 @@
 # p fruits.each
 # p fruits.map
 # p fruits.delete_if
+
+# 4.8.3 添え字を0以外の数値から開始させる
+# fruits = ['apple', 'orange', 'melon']
+
+# # eachで繰り返しつつ、1から始まる添え字を取得する
+# fruits.each.with_index(1) { |fruit, i| puts "#{i}: #{fruit}" }
+
+# # mapで処理しつつ、10から始まる添え字を取得する
+# p fruits.map.with_index(10) { |fruit, i| "#{i}: #{fruit}" }
