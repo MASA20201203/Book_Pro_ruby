@@ -143,3 +143,7 @@
 # prefix = 'This is'
 # p %W(#{prefix}\ an\ apple small\nmelon orange)
 # puts %W(#{prefix}\ an\ apple small\nmelon orange)
+
+# 4.7.11 文字列を配列に変換する
+# p 'Ruby'.chars
+# p 'Ruby,Java,PHP'.split(',')
