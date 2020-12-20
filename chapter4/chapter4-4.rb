@@ -27,6 +27,15 @@
 # even_number = numbers.find { |n| n.even? }
 # p even_number
 
+# 4.4.4 inject/reduce
+# numbers = [1, 2, 3, 4]
+# sum = 0
+# numbers.each { |n| sum += n}
+# p sum
 
+# numbers = [1, 2, 3, 4]
+# sum = numbers.inject(0) { |result, n| result + n }
+# p sum
 
-
+# # injectの計算
+# p ((((0 + 1) + 2) + 3) + 4)
