@@ -43,3 +43,24 @@
 #   sum += sum_value
 # end
 # p sum
+
+# 4.3.5 do...end と {}
+# ブロックは改行を入れなくてもよい
+numbers = [1, 2, 3, 4]
+sum = 0
+numbers.each do |n| sum += n end
+p sum
+
+numbers = [1, 2, 3, 4]
+sum = 0
+# do ... end の代わりに{}を使う
+numbers.each { |n| sum += n }
+p sum
+
+numbers = [1, 2, 3, 4]
+sum = 0
+# {}でブロックを作り、なおかつ改行を入れる
+numbers.each { |n|
+  sum += n
+}
+p sum
