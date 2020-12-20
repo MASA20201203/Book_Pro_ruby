@@ -69,3 +69,16 @@
 # puts charge(12)
 # puts charge(16)
 # puts charge(25)
+
+# 4.5.4 値が連続する配列を作成する
+# p (1..5).to_a
+# p (1...5).to_a
+
+# p ('a'..'e').to_a
+# p ('a'...'e').to_a
+
+# p ('bad'..'bag').to_a
+# p ('bad'...'bag').to_a
+
+# p [*1..5]
+# p [*1...5]
