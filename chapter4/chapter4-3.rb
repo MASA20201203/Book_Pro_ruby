@@ -22,3 +22,24 @@
 #   n.odd?
 # end
 # p a
+
+# 4.3.4 ブロック引数とブロック内の変数
+# numbers = [1, 2, 3, 4]
+# sum = 0
+# numbers.each do |n|
+#   sum_value = n.even? ? n * 10 : n
+#   sum += sum_value
+# end
+# p sum
+
+# # ブロックの外に出ると、sum_valueは参照できない
+# p sum_value
+
+# シャドーイング
+# numbers = [1, 2, 3, 4]
+# sum = 0
+# sum_value = 100
+# numbers.each do |sum_value|
+#   sum += sum_value
+# end
+# p sum
