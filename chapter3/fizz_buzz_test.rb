@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require_relative 'fizz_buzz'
 
 class FizzBuzzTest < Minitest::Test
   def test_fizz_buzz
