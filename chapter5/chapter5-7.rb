@@ -68,3 +68,12 @@
 
 # a = nil
 # p a&.upcase
+
+# column よく使われるイディオム(2) ||=を使った自己代入
+# limit = nil
+# limit ||= 10
+# p limit
+
+# limit = 20
+# limit ||= 10
+# p limit
