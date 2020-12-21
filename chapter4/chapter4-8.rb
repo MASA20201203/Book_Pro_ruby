@@ -65,3 +65,16 @@
 # dimensions.each_with_index do |(length,width), i|
 #   puts "length: #{length}, width: #{width}, i: #{i}"
 # end
+
+# 4.8.5 ブロックローカル変数
+numbers = [1, 2, 3, 4]
+sum = 0
+# ブロックの外にあるsumとは別物の変数sumを用意する
+numbers.each do |n; sum|
+  # 別物のsumを10で初期化し、ブロック引数の値を加算する
+  sum = 10
+  sum += n
+  # 加算した結果をターミナルに表示する
+  p sum
+end
+p sum
