@@ -67,14 +67,23 @@
 # end
 
 # 4.8.5 ブロックローカル変数
-numbers = [1, 2, 3, 4]
-sum = 0
-# ブロックの外にあるsumとは別物の変数sumを用意する
-numbers.each do |n; sum|
-  # 別物のsumを10で初期化し、ブロック引数の値を加算する
-  sum = 10
-  sum += n
-  # 加算した結果をターミナルに表示する
-  p sum
-end
-p sum
+# numbers = [1, 2, 3, 4]
+# sum = 0
+# # ブロックの外にあるsumとは別物の変数sumを用意する
+# numbers.each do |n; sum|
+#   # 別物のsumを10で初期化し、ブロック引数の値を加算する
+#   sum = 10
+#   sum += n
+#   # 加算した結果をターミナルに表示する
+#   p sum
+# end
+# p sum
+
+# 4.8.6 繰り返し処理以外でも使用されるブロック
+
+# # sample.txtを開いて文字列を書き込む（クローズ処理は自動的に行われる）
+# File.open("./sample.txt", "w") do |file|
+#   file.puts("1行目のテキストです。")
+#   file.puts("2行目のテキストです。")
+#   file.puts("3行目のテキストです。")
+# end
