@@ -83,3 +83,33 @@
 #     throw :done, 123
 #   end
 # p ret
+
+# 4.10.3 繰り返し処理で使うbreakとreturnの違い
+# def calc_with_break
+#   numbers = [1, 2, 3, 4, 5, 6]
+#   target = nil
+#   numbers.shuffle.each do |n|
+#     target = n
+#     # breakで脱出する
+#     break if n.even?
+#   end
+#   target * 10
+# end
+# p calc_with_break
+
+# def calc_with_break
+#   numbers = [1, 2, 3, 4, 5, 6]
+#   target = nil
+#   numbers.shuffle.each do |n|
+#     target = n
+#     # returnで脱出する？
+#     return if n.even?
+#   end
+#   target * 10
+# end
+# p calc_with_break
+
+# [1, 2, 3].each do |n|
+#   puts n
+#   return
+# end
