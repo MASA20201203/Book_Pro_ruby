@@ -10,3 +10,12 @@
 # # 変数hのキーと値を**で展開させる
 # g = { japan: 'yen', **h }
 # p g
+
+# 5.6.7 ハッシュから配列へ、配列からハッシュへ
+currencies = { japan: 'yen', us: 'dollar', india: 'rupee' }
+b = currencies.to_a
+p b
+
+# b[:japan] = 'yenn'
+p b.to_h
+
