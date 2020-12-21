@@ -21,3 +21,7 @@
 # symbol = :apple
 # symbol.upcase!
 # p symbol
+
+# 5.3.2 シンボルの特徴とおもな用途
+# p 'apple'.methods
+# p :apple.methods
