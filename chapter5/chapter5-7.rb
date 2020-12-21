@@ -77,3 +77,21 @@
 # limit = 20
 # limit ||= 10
 # p limit
+
+# column よく使われるイディオム(3) !!を使った真偽値の型変換
+# def user_exists?
+#   # データベースなどからユーザを探す（なければnil）
+#   user = find_user
+#   if user
+#     # userが見つかったのでtrue
+#     true
+#   else
+#     # userが見つからなかったのでfalse
+#     false
+#   end
+# end
+
+# # 上記処理を書き換え
+# def user_exists?
+#   !!find_user
+# end
