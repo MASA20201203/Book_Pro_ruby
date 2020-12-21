@@ -60,3 +60,25 @@
 #   a.delete_at(-1)
 # end
 # p a
+
+# 4.9.5 for文
+# numbers = [1, 2, 3, 4]
+# sum = 0
+# for n in numbers
+#   sum += n
+# end
+# p sum
+
+# # doを入れて１行で書くことも可能
+# sum = 0
+# for n in numbers do sum += n end
+# p sum
+
+# # 通常はeachメソッド
+# numbers = [1, 2, 3, 4]
+# sum = 0
+# numbers.each do |n|
+#   sum += n
+# end
+# p sum
+
