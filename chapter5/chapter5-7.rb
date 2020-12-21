@@ -18,10 +18,10 @@
 
 # 5.7.3 シンボルと文字列の関係
 # respond_to?メソッドの引数には文字列とシンボルの両方を渡せる
-p 'apple'.respond_to?('include?')
-p 'apple'.respond_to?(:include?)
+# p 'apple'.respond_to?('include?')
+# p 'apple'.respond_to?(:include?)
 
-# 文字列に'pp'が含まれるか調べる
-p 'apple'.include?('pp')
-# シンボルを引数で渡すとエラーになる
-p 'apple'.include?(:pp)
+# # 文字列に'pp'が含まれるか調べる
+# p 'apple'.include?('pp')
+# # シンボルを引数で渡すとエラーになる
+# p 'apple'.include?(:pp)
