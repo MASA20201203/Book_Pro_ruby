@@ -27,4 +27,36 @@
 # 10.step(1, -2) { |n| a << n}
 # p a
 
+# 4.9.4 while文とuntil文
+# a = []
+# while a.size < 5
+#   a << 1
+# end
+# p a
 
+# a = []
+# while a.size < 5 do a << 1 end
+# p a
+
+# a = []
+# a << 1 while a.size < 5
+# p a
+
+# a = []
+# while false
+#   # このコードは常に条件が偽になるので実行されない
+#   a << 1
+# end
+# p a
+
+# # begin ... endで囲むとどんな条件でも最低1回は実行される
+# begin
+#   a << 1
+# end while false
+# p a
+
+# a = [10, 20, 30, 40, 50]
+# until a.size <= 3
+#   a.delete_at(-1)
+# end
+# p a
