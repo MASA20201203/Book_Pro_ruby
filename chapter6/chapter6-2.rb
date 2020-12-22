@@ -100,3 +100,15 @@
 
 
 # 初心者歓迎！手と目で覚える正規表現入門・その４（最終回）「中級者テクニックをマスターしよう」 - Qiita
+
+# text = <<-TEXT
+# type=zip; filename=users.zip; size=1024;
+# type=xml; filename=posts.xml; size=2048;
+# TEXT
+# p text.scan(/(?<=filename=)[^;]+/)
+
+# text = <<-TEXT
+# John:guitar, George:guitar, Paul:bass, Ringo:drum
+# Freddie:vocal, Brian:guitar, John:bass, Roger:drum
+# TEXT
+# p text.scan(/\w+(?=:bass)/)
