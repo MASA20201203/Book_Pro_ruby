@@ -112,3 +112,17 @@
 # Freddie:vocal, Brian:guitar, John:bass, Roger:drum
 # TEXT
 # p text.scan(/\w+(?=:bass)/)
+
+# 6.3 Rubyにおける正規表現オブジェクト
+
+# regex = /\d{3}-\d{4}/
+# p regex.class
+
+# p '123-4567' =~ /\d{3}-\d{4}/
+# p 'hello' =~ /\d{3}-\d{4}/
+
+# if '123-4567' =~ /\d{3}-\d{4}/
+#   puts 'マッチしました'
+# else
+#   puts 'マッチしませんでした'
+# end
