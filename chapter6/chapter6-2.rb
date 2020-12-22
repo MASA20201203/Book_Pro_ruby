@@ -170,3 +170,20 @@
 #   puts "#{year}/#{month}/#{day}"
 # end
 
+# 6.3.4 正規表現と組み合わせると便利なStringクラスのメソッド
+# p '123 456 789'.scan(/\d+/)
+
+# text = '郵便番号は123-4567'
+# p text[/\d{3}-\d{4}/]
+
+# text = '郵便番号は123-4567です'
+# p text.slice!(/\d{3}-\d{4}/)
+# p text
+
+# p text.split(/,|-/)
+# p text.split(/[,-]/)
+
+# text = '123,456-789'
+# p text.gsub(/,|-/, ':')
+# p text.gsub(/[,-]/, ':')
+
