@@ -143,3 +143,30 @@
 # else
 #   #処理
 # end
+
+# 6.3.3 キャプチャの結果に名前をつける
+
+# text = '私の誕生日は1977年7月17日です。'
+# m = /(?<year>\d+)年(?<month>\d+)月(?<day>\d+)日/.match(text)
+# p m[:year]
+# p m[:month]
+# p m[:day]
+# p m['year']
+# p m[2]
+
+# text = '私の誕生日は1977年7月17日です。'
+# if /(?<year>\d+)年(?<month>\d+)月(?<day>\d+)日/ =~ text
+#   puts "#{year}/#{month}/#{day}"
+# end
+
+# text = '私の誕生日は1977年7月17日です。'
+# if text =~ /(?<year>\d+)年(?<month>\d+)月(?<day>\d+)日/
+#   puts "#{year}/#{month}/#{day}"
+# end
+
+# text = '私の誕生日は1977年7月17日です。'
+# regexp = /(?<year>\d+)年(?<month>\d+)月(?<day>\d+)日/
+# if regexp =~ text
+#   puts "#{year}/#{month}/#{day}"
+# end
+
