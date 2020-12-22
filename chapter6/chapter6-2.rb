@@ -70,4 +70,33 @@
 # puts replaced
 
 # 初心者歓迎！手と目で覚える正規表現入門・その３「空白文字を自由自在に操ろう」 - Qiita
+
+# def hello(name)
+#   puts "Hello, #{name}!"
+# end
+
+# hello('Alice')
+
+# hello('Bob')
+
+# hello('Carol')
+
+# Lorem ipsum dolor sit amet.
+# Vestibulum luctus est ut mauris tempor tincidunt.
+# Suspendisse eget metus
+# Curabitur nec urna eget ligula accumsan congue.
+
+# {
+#   japan: 'yen',
+#   america: 'dollar',
+#   italy: 'euro'
+# }
+
+# Feb 14 07:33:02 app/web.1:  Completed 302 Found ...
+# Feb 14 07:36:54 heroku/router:  at=info method=...
+# Feb 14 07:36:54 app/web.1:  Started HEAD "/" ...
+# Feb 14 07:36:54 app/web.1:  Completed 200 ...
+
+
+
 # 初心者歓迎！手と目で覚える正規表現入門・その４（最終回）「中級者テクニックをマスターしよう」 - Qiita
