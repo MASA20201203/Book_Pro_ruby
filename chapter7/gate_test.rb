@@ -1,5 +1,5 @@
-require 'minitest/auto'
-require 'gate'
+require 'minitest/autorun'
+require_relative 'gate'
 
 class GateTest < Minitest::Test
   def test_gate
